@@ -7,7 +7,7 @@ outpuf of domain analyss of each code piece
 
 When there is more than one commit to rebase.
 
-# 
+#  During
 
 - Get whol conclict into local file.
 - Identify each conflicting commit and why it was made.
@@ -21,5 +21,8 @@ output whole plan and wait for apporival
 rebase on worktree
 ask for lint and tests to run,
 make run over CI via PR if possible.
+
+check that each functional detail is in place in new commmit, if not document what changed
+in this case ask for confirm
 
 wait confirm to force push into proposed pach or send new one.
