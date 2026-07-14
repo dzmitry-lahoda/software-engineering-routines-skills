@@ -26,3 +26,6 @@ check that each functional detail is in place in new commmit, if not document wh
 in this case ask for confirm
 
 wait confirm to force push into proposed pach or send new one.
+
+any features on master added since branch
+  created which can shortcut impl of currenct branch? less code
