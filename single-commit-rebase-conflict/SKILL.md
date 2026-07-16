@@ -24,6 +24,18 @@ in this case ask for confirm
 
 - output whole plan and wait for apporival
 
+## Skill Trigger: Second Opinion (Compiler-Invisible Regressions)
+
+When acting as a Second Opinion reviewer for a rebase, merge plan, or pull request, ignore any conflicts or errors that will be immediately caught by strict compiler. Do not report syntax errors, missing imports, mismatched struct fields, or duplicate protobuf tags. 
+
+Search exclusively for compiler-invisible (silent):
+- logical and business logic regressions
+- missing secondary side effects
+- feature dropping across architectural rewrites
+- silent fallthroughs in dynamically typed or loosely typed switch statements, non total state matches
+
+Report only bugs that will compile perfectly but fail or corrupt data at runtime.
+
 # Execute
 
 squash all into one commiet
