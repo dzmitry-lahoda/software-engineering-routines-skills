@@ -45,6 +45,9 @@ make run over CI via PR if possible.
 
 wait confirm to force push into proposed pach or send new one for existing PR
 
+## finalize
+  
+  Return back all commmits as it was, stacked.
 
 ## Constraints
 Use rebase on worktree
